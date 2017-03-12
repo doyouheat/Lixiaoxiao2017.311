@@ -6,6 +6,8 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -40,6 +42,12 @@ public class MainActivity extends FragmentActivity {
     }
     private void getViews() {
         tab = (TabLayout) findViewById(R.id.tablayout);
+        findViewById(R.id.login).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "豆豆是傻逼，没有小鸡鸡", Toast.LENGTH_SHORT).show();
+            }
+        });
         vp = (ViewPager) findViewById(R.id.vp);
         tab.setTabMode(TabLayout.MODE_SCROLLABLE);
        }

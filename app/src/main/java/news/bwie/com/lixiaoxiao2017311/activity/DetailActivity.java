@@ -30,7 +30,7 @@ public class DetailActivity extends AppCompatActivity {
         webview.getSettings().setDefaultTextEncodingName("gbk");
         webview.loadUrl(url);
         //设置安卓可以调用js的方法
-        webview.getSettings().setJavaScriptEnabled(true);
+      /*  webview.getSettings().setJavaScriptEnabled(true);
         webview.loadUrl("javascript:want()");
         //设置js调用安卓的方法
         webview.addJavascriptInterface(this,"test");
@@ -58,6 +58,6 @@ public class DetailActivity extends AppCompatActivity {
                 bar.setProgress(newProgress);
             }
 
-        });
+        });*/
     }
 }
